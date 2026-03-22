@@ -1,0 +1,59 @@
+{
+  "company_name": "Using AI To Scale",
+  "mission": "Sell managed AI assistant packages to 20+ SMB clients at $2,000-$5,000/mo within 90 days",
+  "ninety_day_goal": "$40,000-$50,000 MRR from 20 clients",
+  "products": [
+    {
+      "name": "OpenClaw Agent Setup",
+      "description": "Single managed AI assistant deployed on Orgo VM, handling inbound lead capture, qualification, and follow-up automation for staffing, home services, and insurance companies.",
+      "pricing": "$0 upfront, 7-day trial, $2,000-$2,500/mo",
+      "delivery_days": 7,
+      "target_customer": "Staffing Agencies, Home Services (HVAC/Plumbing/Electrical), Insurance Agencies (10-50 employees)"
+    },
+    {
+      "name": "Autonomous Business System",
+      "description": "Full Paperclip multi-agent deployment with CEO, CMO, COO, VP Sales, and 3 SDRs handling entire go-to-market operations including lead generation, qualification, and delivery.",
+      "pricing": "$5,000-$10,000 setup + $3,000-$5,000/mo",
+      "delivery_days": 21,
+      "target_customer": "Scaling SMBs ready to automate entire business operations (50-200 employees)"
+    }
+  ],
+  "cross_sell": "Human VA services at $1,500/mo for personal admin, email management, and account management",
+  "verticals": ["Staffing Agencies", "Home Services (HVAC/Plumbing/Electrical)", "Insurance Agencies"],
+  "pain_points": [
+    "Spending 60% of time on admin instead of revenue-generating work",
+    "Missing 40% of inbound calls/leads due to manual processing",
+    "No follow-up system causing lost deals worth thousands per month"
+  ],
+  "proof_point": "One staffing agency client went from $180K to $340K revenue in one quarter after OpenClaw Agent Setup, capturing 100% of leads and automating qualification",
+  "calendar_link": "{{CALENDAR_LINK}}",
+  "email_domain": "usingaitoscale.com",
+  "adapter": {
+    "type": "opencode_local",
+    "model": "kimi-k2.5",
+    "provider": "openrouter",
+    "model_id": "moonshotai/kimi-k2.5"
+  },
+  "budgets": {
+    "ceo": 5000,
+    "cmo": 3000,
+    "coo": 4000,
+    "vp_sales": 4000,
+    "social_media_manager": 2500,
+    "operations_specialist": 2500,
+    "sdr_linkedin_social": 2500,
+    "sdr_cold_outreach": 2500,
+    "sdr_warm_nurture": 2500
+  },
+  "heartbeats": {
+    "ceo": "4h",
+    "cmo": "6h",
+    "coo": "4h",
+    "vp_sales": "2h",
+    "social_media_manager": "2h",
+    "operations_specialist": "4h",
+    "sdr_linkedin_social": "1h",
+    "sdr_cold_outreach": "1h",
+    "sdr_warm_nurture": "2h"
+  }
+}

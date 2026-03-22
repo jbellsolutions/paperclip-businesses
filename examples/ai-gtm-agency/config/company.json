@@ -1,0 +1,80 @@
+{
+  "company_name": "GTM Engine",
+  "mission": "Help B2B startups and SaaS companies launch products faster with AI-powered go-to-market execution. Get to 15 paying clients at $3,000-$5,000/mo within 90 days.",
+  "ninety_day_goal": "$45,000-$75,000 MRR from 15 clients",
+  "products": {
+    "product_1": {
+      "name": "AI GTM Sprint",
+      "description": "14-day go-to-market blitz. We build your ICP, messaging, cold email sequences, landing page copy, and LinkedIn strategy.",
+      "price": "$2,500 one-time",
+      "delivery_days": 14,
+      "deliverables": [
+        "Ideal Customer Profile (ICP) document",
+        "Value proposition & messaging framework",
+        "Cold email sequence (5-7 emails)",
+        "Landing page copy & CTA optimization",
+        "LinkedIn outreach strategy & templates"
+      ]
+    },
+    "product_2": {
+      "name": "Managed AI GTM Retainer",
+      "description": "Ongoing AI-powered lead gen, content, outreach, and pipeline management. We ARE your marketing and sales team.",
+      "price": "$3,000-$5,000/mo",
+      "includes": [
+        "Daily AI-powered lead generation (50-100 leads/month)",
+        "Cold email campaign management & A/B testing",
+        "LinkedIn social selling & engagement",
+        "Weekly performance reports & optimization",
+        "Warm outreach & nurture sequences",
+        "Pipeline management & demo scheduling"
+      ]
+    },
+    "upsell": {
+      "name": "AI Sales Enablement Training",
+      "description": "Team training on AI tools, ChatGPT for sales, prompt engineering for prospecting.",
+      "price": "$1,500 one-time"
+    }
+  },
+  "target_verticals": [
+    "B2B SaaS Startups (seed to Series A)",
+    "Professional Services Firms (consulting, agencies)",
+    "Developer Tools / API Companies",
+    "MarTech / Sales Tech Startups"
+  ],
+  "customer_pain_points": [
+    "Burned through runway on marketing that doesn't convert",
+    "Founders doing sales themselves instead of building product",
+    "Can't afford a full GTM team ($200K+/year) but need one",
+    "No structured ICP or messaging framework",
+    "Poor email/LinkedIn response rates (2-5% when should be 15-25%)",
+    "Unable to generate qualified pipeline at scale"
+  ],
+  "proof_points": [
+    "One SaaS startup went from 0 to 47 qualified demos in 30 days using our AI GTM system",
+    "API company reduced cost-per-qualified-lead from $200 to $45",
+    "MarTech founder closed 3 enterprise deals ($50K ARR) within 60 days of GTM Sprint",
+    "Professional services firm built 6-month pipeline of $500K+ in 45 days",
+    "Founder reclaimed 15 hours/week previously spent on sales, reinvested in product"
+  ],
+  "calendar_link": "{{CALENDAR_LINK}}",
+  "email_domain": "gtmengine.ai",
+  "adapter": "opencode_local",
+  "model": "kimi-k2.5",
+  "api_provider": "openrouter",
+  "budget": {
+    "daily_spend_limit": 15,
+    "monthly_spend_limit": 450,
+    "currency": "USD"
+  },
+  "heartbeat": {
+    "ceo_interval_minutes": 180,
+    "cmo_interval_minutes": 240,
+    "coo_interval_minutes": 120,
+    "vp_sales_interval_minutes": 120,
+    "social_media_manager_interval_minutes": 360,
+    "operations_specialist_interval_minutes": 60,
+    "sdr_linkedin_interval_minutes": 90,
+    "sdr_cold_outreach_interval_minutes": 90,
+    "sdr_warm_nurture_interval_minutes": 120
+  }
+}

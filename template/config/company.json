@@ -1,0 +1,55 @@
+{
+  "company_name": "{{COMPANY_NAME}}",
+  "mission": "{{MISSION}}",
+  "ninety_day_goal": "{{90_DAY_GOAL}}",
+  "products": [
+    {
+      "name": "{{PRODUCT_1_NAME}}",
+      "description": "{{PRODUCT_1_DESCRIPTION}}",
+      "pricing": "{{PRODUCT_1_PRICING}}",
+      "delivery_days": 7,
+      "target_customer": "{{PRODUCT_1_TARGET}}"
+    },
+    {
+      "name": "{{PRODUCT_2_NAME}}",
+      "description": "{{PRODUCT_2_DESCRIPTION}}",
+      "pricing": "{{PRODUCT_2_PRICING}}",
+      "delivery_days": 21,
+      "target_customer": "{{PRODUCT_2_TARGET}}"
+    }
+  ],
+  "cross_sell": "{{CROSS_SELL}}",
+  "verticals": ["{{VERTICAL_1}}", "{{VERTICAL_2}}", "{{VERTICAL_3}}"],
+  "pain_points": ["{{PAIN_POINT_1}}", "{{PAIN_POINT_2}}", "{{PAIN_POINT_3}}"],
+  "proof_point": "{{PROOF_POINT}}",
+  "calendar_link": "{{CALENDAR_LINK}}",
+  "email_domain": "{{EMAIL_DOMAIN}}",
+  "adapter": {
+    "type": "opencode_local",
+    "model": "kimi-k2.5",
+    "provider": "openrouter",
+    "model_id": "moonshotai/kimi-k2.5"
+  },
+  "budgets": {
+    "ceo": 5000,
+    "cmo": 3000,
+    "coo": 4000,
+    "vp_sales": 4000,
+    "social_media_manager": 2500,
+    "operations_specialist": 2500,
+    "sdr_linkedin_social": 2500,
+    "sdr_cold_outreach": 2500,
+    "sdr_warm_nurture": 2500
+  },
+  "heartbeats": {
+    "ceo": "4h",
+    "cmo": "6h",
+    "coo": "4h",
+    "vp_sales": "2h",
+    "social_media_manager": "2h",
+    "operations_specialist": "4h",
+    "sdr_linkedin_social": "1h",
+    "sdr_cold_outreach": "1h",
+    "sdr_warm_nurture": "2h"
+  }
+}
