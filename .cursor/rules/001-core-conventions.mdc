@@ -1,31 +1,66 @@
 ---
-description: "Core team conventions applied to every interaction"
+description: Core conventions for the Paperclip autonomous business system
+globs: ["**/*"]
 alwaysApply: true
 ---
 
 # Core Conventions
 
+## Project Overview
+This is an autonomous AI business deployment system for Paperclip. It runs 9 AI agents (CEO, CMO, COO, VP Sales, Social Media Manager, Operations Specialist, and 3 SDRs) on OpenCode + kimi-k2.5 via OpenRouter. Total AI cost target: under $5/day.
+
+## Critical Constraints
+
+1. **Cost ceiling**: All changes must maintain the under-$5/day total AI cost target across all 9 agents.
+2. **No hardcoded secrets**: API keys, tokens, and credentials use environment variables or Paperclip secret management. Never commit credentials.
+3. **Template-first**: Changes go into `template/` first, then propagate to `examples/`. Never modify examples without updating the template.
+4. **Agent coordination**: CEO (01) coordinates all agents. Changes to CEO cascade downstream. SDR agents (07-09) share deduplication logic -- changes to one must be mirrored.
+
+## File Conventions
+
+- Agent prompts: `template/agents/NN_role_name.md` (zero-padded number prefix)
+- Configs: `template/config/*.json` with `{{PLACEHOLDER}}` syntax for customizable values
+- Deploy scripts: `template/scripts/*.sh` using `set -euo pipefail` and `--dry-run` support
+- Business examples: `examples/business-name/` mirroring template structure
+
+## Before You Edit
+
+- Read `CLAUDE.md` for the full 52-rule operating framework
+- Read `AGENTS.md` for agent architecture and inter-agent dependencies
+- Check `template/config/company.json` for current budget allocations
+- Check `.claude/healing/history.json` for known error patterns
+
+## Cost Awareness
+
+- Model: `moonshotai/kimi-k2.5` via OpenRouter
+- Agent heartbeats: 1h (SDRs) to 6h (CMO)
+- Daily invocations: SDRs ~24x, VP Sales ~12x, CMO ~4x
+- Before changing heartbeat intervals: calculate (new_frequency * tokens_per_call * cost_per_token)
+- Circuit breaker: 2x daily budget = pause the agent
+
 ## Commits
+
 - Descriptive messages explaining WHY, not just WHAT
 - One logical change per commit
 - Never commit secrets, .env files, or credentials
 
 ## Error Handling
+
 - Every external call (API, DB, file) gets try/catch or equivalent
 - Errors include context: what was attempted, what failed, and what to do about it
 - Never swallow errors silently
 
-## Code Style
-- Follow existing patterns in the codebase
-- If no pattern exists, follow language defaults
-- Comments explain WHY, not WHAT (the code explains what)
+## Shell Scripts
 
-## Testing
-- New features get tests before merging
-- Bug fixes include a regression test
-- Run existing tests before committing
+- `set -euo pipefail` at the top of every script
+- Quote all variables: `"$VAR"` not `$VAR`
+- Validate required env vars before proceeding
+- Provide `--dry-run` mode for destructive operations
 
 ## Security
-- No hardcoded secrets — use environment variables
+
+- No hardcoded secrets -- use environment variables
 - Validate all external inputs
-- Check .gitignore includes .env, credentials, and key files
+- `.gitignore` must include: `.env`, `*.key`, `*_secret*`, `*.log`
+- No `chmod 777` or overly permissive file permissions
+- No `eval` or unquoted command substitution in scripts

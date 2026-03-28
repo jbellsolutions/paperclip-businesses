@@ -1,1 +1,28 @@
-{"repo": "paperclip-businesses", "created": "2026-03-28", "insights": []}
+{
+  "schema_version": "1.0.0",
+  "description": "Higher-level insights derived from observations, used to guide future decisions",
+  "repo": "paperclip-businesses",
+  "created": "2026-03-28",
+  "insights": [
+    {
+      "id": "INS-0001",
+      "date": "2026-03-28",
+      "insight": "Cost optimization should focus on SDR agents first -- they run 24x/day vs CEO 6x/day. A 10% token reduction in SDR prompts saves more than a 30% reduction in CEO prompts.",
+      "derived_from": [
+        "OBS-0002"
+      ],
+      "actionable": true,
+      "applied": false
+    },
+    {
+      "id": "INS-0002",
+      "date": "2026-03-28",
+      "insight": "The template system separates concerns well: template/ for reusable patterns, examples/ for specific businesses. New features should follow this pattern -- add to template first, then demonstrate in an example.",
+      "derived_from": [
+        "OBS-0001"
+      ],
+      "actionable": true,
+      "applied": false
+    }
+  ]
+}

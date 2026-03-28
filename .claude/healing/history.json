@@ -1,1 +1,10 @@
-{"repo": "paperclip-businesses", "created": "2026-03-28", "total_heals": 0, "successful_heals": 0, "failed_heals": 0, "entries": []}
+{
+  "schema_version": "1.0.0",
+  "description": "History of errors encountered and healing actions taken",
+  "repo": "paperclip-businesses",
+  "created": "2026-03-28",
+  "total_heals": 0,
+  "successful_heals": 0,
+  "failed_heals": 0,
+  "entries": []
+}

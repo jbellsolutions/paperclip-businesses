@@ -1,1 +1,26 @@
-{"repo": "paperclip-businesses", "created": "2026-03-28", "version": 0, "mutations": []}
+{
+  "schema_version": "1.0.0",
+  "description": "Tracks how the project evolves over time -- decisions made, patterns adopted, approaches abandoned",
+  "repo": "paperclip-businesses",
+  "created": "2026-03-28",
+  "version": 1,
+  "entries": [
+    {
+      "id": "EVO-0001",
+      "date": "2026-03-28",
+      "type": "addition",
+      "description": "Added AGI-1 self-healing and self-learning infrastructure",
+      "rationale": "Enable AI assistants to learn from errors, accumulate project knowledge, and improve over time",
+      "files_affected": [
+        "CLAUDE.md",
+        "AGENTS.md",
+        "GEMINI.md",
+        "features.json",
+        "llms.txt",
+        ".claude/healing/patterns.json",
+        ".claude/learning/observations.json"
+      ],
+      "reversible": true
+    }
+  ]
+}

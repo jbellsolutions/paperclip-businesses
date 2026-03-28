@@ -1,1 +1,32 @@
-{"repo": "paperclip-businesses", "created": "2026-03-28", "observations": []}
+{
+  "schema_version": "1.0.0",
+  "description": "Raw observations about the project collected during work sessions",
+  "repo": "paperclip-businesses",
+  "created": "2026-03-28",
+  "observations": [
+    {
+      "id": "OBS-0001",
+      "date": "2026-03-28",
+      "category": "architecture",
+      "observation": "9-agent system uses a hierarchical coordination model with CEO at the top. Changes to CEO prompt cascade to all 8 downstream agents.",
+      "source": "initial repo analysis",
+      "confidence": 1.0
+    },
+    {
+      "id": "OBS-0002",
+      "date": "2026-03-28",
+      "category": "cost",
+      "observation": "SDR agents (07-09) have 1h heartbeats making them the highest-frequency and therefore highest-cost agents. They are the first place to look when optimizing costs.",
+      "source": "template/config/company.json",
+      "confidence": 1.0
+    },
+    {
+      "id": "OBS-0003",
+      "date": "2026-03-28",
+      "category": "architecture",
+      "observation": "The system uses kimi-k2.5 via OpenRouter as the sole model. All agents share the same model, keeping the architecture simple but creating a single point of failure if OpenRouter or kimi-k2.5 goes down.",
+      "source": "template/config/company.json",
+      "confidence": 1.0
+    }
+  ]
+}
