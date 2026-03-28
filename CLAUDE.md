@@ -88,3 +88,59 @@ These rules govern ALL agent behavior in this workspace. They are non-negotiable
 ## API
 
 52. The OAuth token works. Never suggest generating a new key. If a call fails, fix HOW the call is made.
+
+---
+
+## Session Startup Checklist
+
+Every new session MUST begin with these steps in order:
+
+1. Read this file (`CLAUDE.md`) fully.
+2. Read `AGENTS.md` for agent architecture and inter-agent dependencies.
+3. Check `.claude/healing/history.json` for recent errors and active patterns.
+4. Check `.claude/learning/observations.json` for accumulated project knowledge.
+5. Check `claude-progress.txt` for incomplete work from prior sessions.
+6. Run `git status` and `git log --oneline -5` to understand current state.
+7. If modifying agent prompts or configs, read `template/config/company.json` for budget constraints.
+
+## Session End Instructions
+
+Before ending ANY session:
+
+1. Update `claude-progress.txt` with: what was done, what is pending, blockers found.
+2. Log any new error patterns to `.claude/healing/history.json`.
+3. Log any new project insights to `.claude/learning/observations.json`.
+4. If agent prompts were modified, verify total daily cost stays under $5/day target.
+5. Run `git status` to confirm no uncommitted work is left untracked.
+
+## Compaction Rules
+
+When context is running low or a compaction is triggered:
+
+1. PRESERVE: Current task description, file paths being edited, error messages being debugged, git branch state.
+2. PRESERVE: Any cost calculations in progress (agent budgets, API spend estimates).
+3. SUMMARIZE: Research findings into bullet points.
+4. DROP: File contents already committed. Re-read from disk if needed.
+5. DROP: Shell output from successful commands (keep only failures).
+6. ALWAYS re-read `claude-progress.txt` after compaction to restore context.
+
+## Search Strategy
+
+When looking for information in this repo:
+
+1. Agent prompts: `template/agents/` (numbered 01-09), check `examples/` for customized versions.
+2. Configuration: `template/config/company.json` (budgets, heartbeats, model settings).
+3. Deployment: `template/scripts/deploy.sh` and `examples/*/deploy.sh`.
+4. Infrastructure patterns: `infrastructure/templates/` (self-healing, security layers).
+5. Business rules: `rules/RULES.md`.
+6. Cost data: `template/config/company.json` under `budgets` and `heartbeats` keys.
+
+## Thinking Guidelines
+
+Before modifying agent prompts, deployment configs, or adding new automation:
+
+1. **Cost check**: Will this change increase API token usage? Each agent has a daily token budget in `company.json`. The total system MUST stay under $5/day in AI costs (kimi-k2.5 via OpenRouter).
+2. **Rate limits**: OpenRouter enforces per-minute and per-day rate limits. Agents with 1h heartbeats (SDRs) are the most rate-limit-sensitive. Never reduce heartbeat intervals without calculating the rate limit impact.
+3. **Cascade effects**: Agent 01 (CEO) coordinates all others. Changes to CEO prompts ripple to all 8 downstream agents. Changes to config schemas affect `deploy.sh` and all example businesses.
+4. **Credential safety**: Never hardcode API keys, OpenRouter tokens, or email credentials in agent prompts or config files. Use environment variables or Paperclip's secret management.
+5. **Rollback plan**: Before making multi-file changes, note the current git state. If changes break the under-$5/day target, revert immediately.

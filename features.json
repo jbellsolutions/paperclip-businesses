@@ -1,0 +1,55 @@
+{
+  "schema_version": "1.0.0",
+  "project": "paperclip-businesses",
+  "description": "Autonomous AI business deployment system for Paperclip",
+  "features": {
+    "agent_system": {
+      "status": "active",
+      "description": "9 AI agents (CEO, CMO, COO, VP Sales, SMM, Ops, 3 SDRs) running on Paperclip",
+      "model": "kimi-k2.5 via OpenRouter",
+      "cost_target": "under $5/day"
+    },
+    "template_system": {
+      "status": "active",
+      "description": "Reusable templates for creating new autonomous businesses",
+      "entry_point": "template/TEMPLATE.md"
+    },
+    "deployment_automation": {
+      "status": "active",
+      "description": "Shell-based deploy scripts for setting up agents on Paperclip",
+      "entry_point": "template/scripts/deploy.sh"
+    },
+    "self_healing": {
+      "status": "new",
+      "description": "Error pattern recognition and automated fix strategies",
+      "config_path": ".claude/healing/patterns.json"
+    },
+    "self_learning": {
+      "status": "new",
+      "description": "Observation logging, insight extraction, and evolution tracking",
+      "config_path": ".claude/learning/"
+    },
+    "security_review": {
+      "status": "new",
+      "description": "Automated security review for API keys, credentials, and cost controls",
+      "config_path": ".claude/agents/security-reviewer.md"
+    },
+    "code_review": {
+      "status": "new",
+      "description": "Automated code review for shell scripts and config changes",
+      "config_path": ".claude/agents/code-reviewer.md"
+    }
+  },
+  "example_businesses": [
+    {
+      "name": "uais-openclaw-agency",
+      "path": "examples/uais-openclaw-agency/",
+      "products": ["OpenClaw Agent Setup", "Autonomous Business System"]
+    },
+    {
+      "name": "ai-gtm-agency",
+      "path": "examples/ai-gtm-agency/",
+      "products": ["AI GTM Sprint", "Managed AI GTM Retainer"]
+    }
+  ]
+}

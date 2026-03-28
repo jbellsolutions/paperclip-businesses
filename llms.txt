@@ -1,0 +1,43 @@
+# paperclip-businesses
+
+> Deploy fully autonomous AI-powered businesses on Paperclip in minutes. 9 AI agents run prospecting, selling, marketing, and delivering for under $5/day in AI costs.
+
+## What This Repo Does
+
+This is a template system for deploying autonomous AI businesses on the Paperclip platform. Each business runs 9 AI agents powered by kimi-k2.5 via OpenRouter through OpenCode. The agents handle the full business lifecycle: CEO strategy, marketing, operations, sales management, social media, and SDR outreach.
+
+## Repo Structure
+
+- template/agents/ -- 9 numbered agent prompt files (01_ceo.md through 09_sdr_warm_nurture.md)
+- template/config/company.json -- company configuration (products, budgets, heartbeats, model settings)
+- template/config/opencode.json -- OpenCode runtime configuration
+- template/scripts/deploy.sh -- automated deployment script
+- examples/ -- pre-built business models (uais-openclaw-agency, ai-gtm-agency)
+- infrastructure/templates/ -- self-healing pipeline and security layer patterns
+- rules/RULES.md -- business rules and operational constraints
+- CLAUDE.md -- AI assistant operational rules (52 rules + session management)
+- AGENTS.md -- agent architecture, coordination model, inter-agent dependencies
+
+## Key Technical Details
+
+- Platform: Paperclip (paperclip.ing)
+- Runtime: OpenCode
+- Model: kimi-k2.5 via OpenRouter (moonshotai/kimi-k2.5)
+- Cost target: under $5/day total across all 9 agents
+- Agent heartbeats range from 1h (SDRs) to 6h (CMO)
+- Each agent has a daily token budget defined in company.json
+
+## How to Use This Repo
+
+1. Pick a business model from examples/ or create your own from template/
+2. Customize company.json with your business details
+3. Run deploy.sh to set up agents on Paperclip
+4. Agents self-coordinate via the CEO agent hierarchy
+
+## Important Constraints
+
+- Total AI cost must stay under $5/day
+- No hardcoded API keys or credentials in any file
+- Agent prompts must respect token budgets in company.json
+- SDR agents share prospect deduplication -- changes to one must be mirrored to others
+- CEO agent changes cascade to all 8 downstream agents
