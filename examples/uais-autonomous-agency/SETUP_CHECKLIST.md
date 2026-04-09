@@ -1,9 +1,9 @@
-# UAIS OpenClaw Agency - Setup Checklist
+# UAIS Autonomous Agency - Setup Checklist
 
 ## What Was Created
 
 Complete filled-in example of Using AI To Scale, a B2B SaaS agency selling:
-- **OpenClaw Agent Setup**: $2K-$2.5K/mo, 7-day deployment
+- **Autonomous Agent Setup**: $2K-$2.5K/mo, 7-day deployment
 - **Autonomous Business System**: $5K-$10K setup + $3K-$5K/mo, 21-day deployment
 - **Target verticals**: Staffing Agencies, Home Services (HVAC/Plumbing/Electrical), Insurance Agencies
 - **90-day goal**: $40K-$50K MRR from 20+ clients

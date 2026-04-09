@@ -8,7 +8,7 @@ Claude Code will read this repo's actual files and walk you through every step i
 
 ## What This Repo Does
 
-Deploy a fully autonomous AI-powered business on [Paperclip](https://paperclip.ing) in minutes. Each business runs 9 AI agents on OpenCode + kimi-k2.5 via OpenRouter — a CEO, CMO, COO, VP Sales, Social Media Manager, Operations Specialist, and 3 SDRs handling prospecting, cold outreach, and warm nurture. Two example businesses included: a UAIS/OpenClaw agency and an AI Go-To-Market Agency. AI costs under $5/day. You take demo calls. Agents handle everything else.
+Deploy a fully autonomous AI-powered business on [Paperclip](https://paperclip.ing) in minutes. Each business runs 9 AI agents on OpenCode + kimi-k2.5 via OpenRouter — a CEO, CMO, COO, VP Sales, Social Media Manager, Operations Specialist, and 3 SDRs handling prospecting, cold outreach, and warm nurture. Two example businesses included: a UAIS Autonomous Agency and an AI Go-To-Market Agency. AI costs under $5/day. You take demo calls. Agents handle everything else.
 
 ---
 
@@ -33,7 +33,7 @@ Configuration lives in `template/config/company.json` and `template/config/openc
 
 For each example business, copy the config:
 ```bash
-cp examples/uais-openclaw-agency/config/company.json config/
+cp examples/uais-autonomous-agency/config/company.json config/
 # or
 cp examples/ai-gtm-agency/config/company.json config/
 ```
@@ -45,7 +45,7 @@ cp examples/ai-gtm-agency/config/company.json config/
 ```bash
 # 1. Pick your business model
 ls examples/
-# Options: uais-openclaw-agency, ai-gtm-agency
+# Options: uais-autonomous-agency, ai-gtm-agency
 
 # 2. Run the deploy script
 bash template/scripts/deploy.sh
@@ -98,7 +98,7 @@ See `template/TEMPLATE.md` for the full business creation guide.
 |---------|-------------|
 | `bash template/scripts/deploy.sh` | Deploy chosen business to Paperclip |
 | `ls examples/` | List available business models |
-| `cat examples/uais-openclaw-agency/README.md` | Read UAIS/OpenClaw agency details |
+| `cat examples/uais-autonomous-agency/README.md` | Read UAIS Autonomous Agency details |
 | `cat examples/ai-gtm-agency/README.md` | Read AI GTM agency details |
 
 ---

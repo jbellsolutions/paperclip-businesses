@@ -36,7 +36,7 @@ paperclip-businesses/
 │       └── deploy.sh            # Automated setup script
 │
 ├── examples/
-│   ├── uais-openclaw-agency/    # Example 1: Sell OpenClaw + Autonomous Business
+│   ├── uais-autonomous-agency/  # Example 1: Sell AI Agent Setup + Autonomous Business
 │   │   ├── README.md
 │   │   ├── config/
 │   │   │   └── company.json
@@ -65,7 +65,7 @@ git clone https://github.com/YOUR_USERNAME/paperclip-businesses.git
 cd paperclip-businesses
 
 # Deploy an example business
-bash examples/uais-openclaw-agency/deploy.sh
+bash examples/uais-autonomous-agency/deploy.sh
 
 # Or deploy the AI GTM agency
 bash examples/ai-gtm-agency/deploy.sh
@@ -86,9 +86,9 @@ One client covers the entire operating cost.
 
 ## Available Business Models
 
-### Example 1: UAIS OpenClaw Agency
+### Example 1: UAIS Autonomous Agency
 Sells two products to SMBs:
-- **Product 1**: OpenClaw Agent Setup ($0 upfront, 7-day trial, $2K-$2.5K/mo)
+- **Product 1**: Autonomous Agent Setup ($0 upfront, 7-day trial, $2K-$2.5K/mo)
 - **Product 2**: Autonomous Business System ($5K-$10K setup + $3K-$5K/mo upsell)
 
 ### Example 2: AI Go-To-Market Agency

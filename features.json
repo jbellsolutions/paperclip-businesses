@@ -42,9 +42,9 @@
   },
   "example_businesses": [
     {
-      "name": "uais-openclaw-agency",
-      "path": "examples/uais-openclaw-agency/",
-      "products": ["OpenClaw Agent Setup", "Autonomous Business System"]
+      "name": "uais-autonomous-agency",
+      "path": "examples/uais-autonomous-agency/",
+      "products": ["Autonomous Agent Setup", "Autonomous Business System"]
     },
     {
       "name": "ai-gtm-agency",

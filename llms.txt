@@ -12,7 +12,7 @@ This is a template system for deploying autonomous AI businesses on the Papercli
 - template/config/company.json -- company configuration (products, budgets, heartbeats, model settings)
 - template/config/opencode.json -- OpenCode runtime configuration
 - template/scripts/deploy.sh -- automated deployment script
-- examples/ -- pre-built business models (uais-openclaw-agency, ai-gtm-agency)
+- examples/ -- pre-built business models (uais-autonomous-agency, ai-gtm-agency)
 - infrastructure/templates/ -- self-healing pipeline and security layer patterns
 - rules/RULES.md -- business rules and operational constraints
 - CLAUDE.md -- AI assistant operational rules (52 rules + session management)

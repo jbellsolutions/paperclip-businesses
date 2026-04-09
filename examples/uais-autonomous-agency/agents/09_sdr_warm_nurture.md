@@ -120,7 +120,7 @@ Subject: How [Staffing Company] went from $180K to $340K revenue
 
 Hi [First Name],
 
-Thought of you when we closed another staffing agency on OpenClaw Agent Setup.
+Thought of you when we closed another staffing agency on Autonomous Agent Setup.
 
 Here's their story: They were missing 30-40% of inbound calls. No one to answer, no system to track leads.
 
@@ -142,7 +142,7 @@ Subject: How a plumbing company cut admin work in half
 
 Hi [First Name],
 
-Closed another contractor on OpenClaw Agent Setup. Thought you'd find their story useful.
+Closed another contractor on Autonomous Agent Setup. Thought you'd find their story useful.
 
 Situation: Spending 400 hours/year on scheduling, quotes, and customer follow-ups.
 
@@ -164,7 +164,7 @@ Subject: How an insurance agency closed 3 more clients per month
 
 Hi [First Name],
 
-Just closed an insurance agency on OpenClaw Agent Setup. Their story might be relevant to you.
+Just closed an insurance agency on Autonomous Agent Setup. Their story might be relevant to you.
 
 Problem: Policy reviews and client referral follow-ups were falling through the cracks. No systematic way to remind clients.
 

@@ -1,4 +1,4 @@
-# Using AI To Scale (UAIS) - OpenClaw Agency Example
+# Using AI To Scale (UAIS) - Autonomous Agency Example
 
 This is a complete, filled-in example of an autonomous business selling managed AI assistant packages using the Paperclip framework.
 
@@ -6,7 +6,7 @@ This is a complete, filled-in example of an autonomous business selling managed 
 
 Using AI To Scale is a B2B SaaS agency that sells two products:
 
-1. **OpenClaw Agent Setup** ($2K-$2.5K/mo): Single managed AI assistant on Orgo VM
+1. **Autonomous Agent Setup** ($2K-$2.5K/mo): Single managed AI assistant on Orgo VM
    - Handles inbound lead capture, qualification, and follow-up
    - 7-day deployment
    - Target: Staffing Agencies, Home Services, Insurance Agencies
@@ -91,7 +91,7 @@ BOARD (You / Justin)
         ├── CMO (cold email sequences, LinkedIn content, brand voice)
         │   └── Social Media Manager (LinkedIn posts, influencer scraping for staffing/home services/insurance)
         ├── COO (client delivery, onboarding, SLA tracking)
-        │   └── Operations Specialist (builds OpenClaw agents, 7-day + 21-day deployments)
+        │   └── Operations Specialist (builds AI agents, 7-day + 21-day deployments)
         └── VP Sales (pipeline management, 3 SDRs, conversion coaching)
             ├── SDR LinkedIn & Social (warm outreach to influencers in verticals)
             ├── SDR Cold Outreach (email/call/text to staffing, home services, insurance leads)
@@ -107,7 +107,7 @@ BOARD (You / Justin)
 | COO | $40 | 95%+ on-time delivery rate |
 | VP Sales | $40 | 3x pipeline coverage (120-150K pipe for 40-50K goal) |
 | Social Media Manager | $25 | 5+ warm leads/week from influencer scraping |
-| Operations Specialist | $25 | <7 day average delivery on OpenClaw setups |
+| Operations Specialist | $25 | <7 day average delivery on Autonomous Agent setups |
 | SDR LinkedIn & Social | $25 | 1+ meeting booked/day from warm outreach |
 | SDR Cold Outreach | $25 | 2-3 meetings booked/day from cold email/call/text |
 | SDR Warm & Nurture | $25 | 20%+ warm-to-SQL conversion rate |

@@ -4,7 +4,7 @@
   "ninety_day_goal": "$40,000-$50,000 MRR from 20 clients",
   "products": [
     {
-      "name": "OpenClaw Agent Setup",
+      "name": "Autonomous Agent Setup",
       "description": "Single managed AI assistant deployed on Orgo VM, handling inbound lead capture, qualification, and follow-up automation for staffing, home services, and insurance companies.",
       "pricing": "$0 upfront, 7-day trial, $2,000-$2,500/mo",
       "delivery_days": 7,
@@ -25,7 +25,7 @@
     "Missing 40% of inbound calls/leads due to manual processing",
     "No follow-up system causing lost deals worth thousands per month"
   ],
-  "proof_point": "One staffing agency client went from $180K to $340K revenue in one quarter after OpenClaw Agent Setup, capturing 100% of leads and automating qualification",
+  "proof_point": "One staffing agency client went from $180K to $340K revenue in one quarter after Autonomous Agent Setup, capturing 100% of leads and automating qualification",
   "calendar_link": "{{CALENDAR_LINK}}",
   "email_domain": "usingaitoscale.com",
   "adapter": {

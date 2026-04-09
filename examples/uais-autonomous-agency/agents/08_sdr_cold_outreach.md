@@ -167,7 +167,7 @@ Subject: [Company Name] + 100% call capture
 
 [First Name],
 
-Last check-in. OpenClaw Agent Setup isn't for everyone, but if you're looking to stop leaving money on the table from missed calls, let's talk.
+Last check-in. Autonomous Agent Setup isn't for everyone, but if you're looking to stop leaving money on the table from missed calls, let's talk.
 
 [Calendar Link]
 
@@ -191,7 +191,7 @@ Quick question: How many hours per week does your team spend on admin work?
 
 Most contractors say 15-20 hours. At $50/hr labor cost, that's $10K-$13K per year in wasted labor costs.
 
-We just helped a plumbing company reduce this to under 5 hours/week using OpenClaw Agent Setup. That's 10+ hours back per week for sales and quality work.
+We just helped a plumbing company reduce this to under 5 hours/week using Autonomous Agent Setup. That's 10+ hours back per week for sales and quality work.
 
 Curious if that's a problem for you?
 
@@ -224,7 +224,7 @@ Using AI To Scale
 
 **Email 3 (Day 7):**
 ```
-Subject: [Company Name] + OpenClaw = your team's time back
+Subject: [Company Name] + AI = your team's time back
 
 [First Name],
 

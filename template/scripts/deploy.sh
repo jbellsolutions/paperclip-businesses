@@ -50,7 +50,7 @@ else
       echo ""
     fi
   done
-  echo -n "Enter example folder name (e.g., uais-openclaw-agency): "
+  echo -n "Enter example folder name (e.g., uais-autonomous-agency): "
   read CHOICE
   BIZ_DIR="$REPO_DIR/examples/$CHOICE"
 fi
